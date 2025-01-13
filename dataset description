@@ -3,41 +3,24 @@ Taxi Cab Revenue Dataset: Payment Type Analysis
 This dataset contains information on taxi trips, including payment methods, fare amounts, and other trip-related details. It is designed to help analyze the relationship between payment types (credit card vs. cash) and total fare amounts, providing insights into strategies for maximizing taxi driver revenue.
 
 Key Columns in the Dataset:
-Trip ID:
+1)VendorID: A code indicating the vendor associated with the trip record.
+2)tpep_pickup_datetime: The date and time when the trip started.
+3)tpep_dropoff_datetime: The date and time when the trip ended.
+4)passenger_count: The number of passengers in the vehicle during the trip.
+5)trip_distance: The distance of the trip in miles.
+6)RatecodeID: The rate code assigned to the trip.
+7)store_and_fwd_flag: Indicates whether the trip record was held in the vehicle's memory before being sent to the server (Y = yes, N = no).
+8)PULocationID: The pickup location ID (a coded value corresponding to a specific location).
+9)DOLocationID: The drop-off location ID (a coded value corresponding to a specific location).
+10)payment_type: A numeric code representing the payment method.
+11)fare_amount: The fare amount for the trip.
+12)extra: Additional charges, if any.
+13)mta_tax: A tax charge by the Metropolitan Transportation Authority.
+14)tip_amount: The tip amount paid by the passenger.
+15)tolls_amount: The toll amount during the trip.
+16)improvement_surcharge: A surcharge for improvement purposes.
+17)total_amount: The total amount charged for the trip.
+18)congestion_surcharge: Additional charge for trips in congested areas.
 
-Description: Unique identifier for each trip.
-Data Type: Integer
-Total Fare Amount:
-
-Description: The total fare charged for the taxi ride, including any applicable charges such as tips or surcharges.
-Data Type: Float
-Payment Type:
-
-Description: The method of payment used by the customer for the trip. This can either be "Credit Card" or "Cash."
-Data Type: Categorical (String)
-Trip Duration:
-
-Description: The duration of the taxi ride in minutes.
-Data Type: Float
-Trip Distance:
-
-Description: The total distance covered during the taxi ride, typically in kilometers or miles.
-Data Type: Float
-Pickup Date/Time:
-
-Description: The date and time when the taxi ride started.
-Data Type: DateTime
-Dropoff Date/Time:
-
-Description: The date and time when the taxi ride ended.
-Data Type: DateTime
-Driver ID:
-
-Description: Unique identifier for the driver of the taxi.
-Data Type: Integer
-City/Region:
-
-Description: The location where the taxi ride took place (city or region).
-Data Type: String
 Purpose of the Dataset:
 This dataset will be analyzed to explore whether payment types (credit card vs. cash) have an impact on total fare amounts. By identifying any trends, the goal is to provide actionable insights that can help taxi drivers optimize revenue, either by encouraging the use of certain payment methods or adjusting pricing strategies.
